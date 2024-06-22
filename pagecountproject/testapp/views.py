@@ -2,6 +2,7 @@ from django.shortcuts import render
 
 
 # Create your views here.
+# cookie
 def count_view(request):
     print('Cookies from the client:', request.COOKIES)
     count = int(request.COOKIES.get('count', 0))
